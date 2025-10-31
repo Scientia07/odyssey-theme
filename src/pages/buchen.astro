@@ -1,0 +1,428 @@
+---
+import Layout from '../layouts/Page.astro';
+import Container from '../components/core/Container.astro';
+import { Icon } from 'astro-icon/components';
+
+const seo = {
+	title: 'Kostenloses Kennenlernen - LunoLabs Altendorf',
+	description: 'Jetzt kostenloses Kennenlernen buchen. Wir sprechen über deine Ideen, Projekte oder Abschlussarbeit. 15 Minuten online oder vor Ort in Altendorf (SZ).',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<section class="booking-section">
+			<h1><Icon name="ic:baseline-event-available" /> Kostenloses Kennenlernen</h1>
+
+			<div class="intro-box">
+				<p>Du hast eine Idee, ein Projekt oder einfach Lust etwas zu bauen?<br>
+				Oder du möchtest wissen, ob LunoLabs zu dir passt?</p>
+
+				<p>Dann buche dir ganz unkompliziert ein <strong>kostenloses Kennenlernen</strong>.</p>
+
+				<div class="details">
+					<div class="detail-item">
+						<Icon name="ic:baseline-schedule" />
+						<div>
+							<strong>Dauer:</strong> 15 Minuten
+						</div>
+					</div>
+					<div class="detail-item">
+						<Icon name="ic:baseline-place" />
+						<div>
+							<strong>Ort:</strong> Online oder vor Ort in Altendorf (SZ)
+						</div>
+					</div>
+					<div class="detail-item">
+						<Icon name="ic:baseline-payments" />
+						<div>
+							<strong>Kosten:</strong> 0.- (wirklich)
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="what-we-cover">
+				<h2><Icon name="ic:baseline-chat" /> Wir schauen gemeinsam:</h2>
+				<ul>
+					<li><Icon name="ic:baseline-lightbulb" /> Was du gerne machen möchtest</li>
+					<li><Icon name="ic:baseline-trending-up" /> Wo du gerade stehst</li>
+					<li><Icon name="ic:baseline-settings-suggest" /> Welche Technologie für dich passt (3D-Druck, Robotik, Elektronik, CNC, etc.)</li>
+					<li><Icon name="ic:baseline-support-agent" /> Wie ich dich am besten begleiten kann</li>
+				</ul>
+
+				<div class="no-pressure">
+					<p>Keine Vorbereitung nötig.</p>
+					<p>Kein Druck.</p>
+					<p>Einfach reden und loslegen.</p>
+				</div>
+			</div>
+
+			<div class="cta-box">
+				<h2><Icon name="ic:baseline-calendar-today" /> Termin buchen</h2>
+				<p>Klicke auf den Button und suche dir eine Zeit aus:</p>
+				<a href="https://calendly.com/lunolabs/kennenlernen" class="cta-button" target="_blank" rel="noopener noreferrer">
+					<Icon name="ic:baseline-event" /> Kostenloses Kennenlernen buchen
+				</a>
+				<p class="note">Falls der Kalender-Link nicht funktioniert, schreib uns einfach eine E-Mail an <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></p>
+			</div>
+
+			<div class="after-meeting">
+				<h2><Icon name="ic:baseline-next-plan" /> Was passiert danach?</h2>
+				<p>Nach dem Kennenlernen kannst du entscheiden:</p>
+				<div class="options-grid">
+					<div class="option-card">
+						<Icon name="ic:baseline-construction" />
+						<h3>Projekt starten</h3>
+						<p>Beginne mit deinem eigenen Projekt und wir begleiten dich dabei.</p>
+					</div>
+					<div class="option-card">
+						<Icon name="ic:baseline-school" />
+						<h3>Workshops besuchen</h3>
+						<p>Nimm an unseren Workshops teil und lerne neue Skills.</p>
+					</div>
+					<div class="option-card">
+						<Icon name="ic:baseline-explore" />
+						<h3>Weiterschauen</h3>
+						<p>Keine Eile – schau in Ruhe, ob LunoLabs zu dir passt.</p>
+					</div>
+				</div>
+				<p class="freedom">Ganz frei. Ganz ohne Verpflichtung. Einfach entspannt.</p>
+			</div>
+
+			<div class="location-section">
+				<h2><Icon name="ic:baseline-location-on" /> Wo findet das statt?</h2>
+				<div class="location-options">
+					<div class="location-card">
+						<Icon name="ic:baseline-place" />
+						<h3>Vor Ort</h3>
+						<p><strong>Altendorf, Schwyz</strong></p>
+						<p>Direkt im Tech Workspace – du kannst die Werkstatt sehen und die Atmosphäre erleben.</p>
+					</div>
+					<div class="location-card">
+						<Icon name="ic:baseline-videocam" />
+						<h3>Online</h3>
+						<p><strong>Per Video</strong></p>
+						<p>Bequem von zu Hause aus – wir können trotzdem alles besprechen und klären.</p>
+					</div>
+				</div>
+				<p class="choice">Du entscheidest beim Buchen, was dir lieber ist.</p>
+			</div>
+
+			<div class="questions-section">
+				<h2><Icon name="ic:baseline-help" /> Fragen?</h2>
+				<p>Schreib mir einfach kurz:</p>
+				<a href="mailto:info@lunolabs.ch" class="email-button">
+					<Icon name="ic:baseline-email" /> info@lunolabs.ch
+				</a>
+				<p class="closing">Ich freue mich darauf, dich kennenzulernen ✨</p>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.booking-section {
+		padding: 4rem 0;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		color: var(--theme-on-bg);
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+		color: var(--theme-primary);
+	}
+
+	.intro-box {
+		background: var(--theme-surface-1);
+		padding: 2.5rem;
+		border-radius: 16px;
+		margin-bottom: 3rem;
+		border-left: 4px solid var(--theme-primary);
+	}
+
+	.intro-box p {
+		font-size: 1.1rem;
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+	}
+
+	.details {
+		display: grid;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.detail-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		color: var(--theme-on-bg);
+		font-size: 1.05rem;
+	}
+
+	.detail-item strong {
+		color: var(--theme-primary);
+	}
+
+	.what-we-cover {
+		margin-bottom: 3rem;
+	}
+
+	.what-we-cover ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.what-we-cover li {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+		margin-bottom: 1rem;
+		font-size: 1.05rem;
+	}
+
+	.no-pressure {
+		margin-top: 2rem;
+		padding: 1.5rem;
+		background: var(--theme-surface-2);
+		border-radius: 12px;
+		text-align: center;
+	}
+
+	.no-pressure p {
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+		margin-bottom: 0.5rem;
+		font-size: 1.1rem;
+	}
+
+	.cta-box {
+		background: linear-gradient(135deg, var(--theme-primary), var(--theme-primary-hover));
+		color: var(--theme-on-primary);
+		padding: 3rem;
+		border-radius: 20px;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.cta-box h2 {
+		color: var(--theme-on-primary);
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+
+	.cta-box > p:first-of-type {
+		color: var(--theme-on-primary);
+		opacity: 0.95;
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+	}
+
+	.cta-button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		background: var(--theme-on-primary);
+		color: var(--theme-primary);
+		padding: 1.25rem 2.5rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1.1rem;
+		transition: transform 0.2s, box-shadow 0.2s;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.cta-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.note {
+		margin-top: 1.5rem;
+		font-size: 0.95rem;
+		color: var(--theme-on-primary);
+		opacity: 0.85;
+	}
+
+	.note a {
+		color: var(--theme-on-primary);
+		font-weight: 600;
+		text-decoration: underline;
+	}
+
+	.after-meeting {
+		margin-bottom: 3rem;
+	}
+
+	.after-meeting > p:first-of-type {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		font-size: 1.05rem;
+		margin-bottom: 2rem;
+	}
+
+	.options-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.option-card {
+		background: var(--theme-surface-1);
+		padding: 2rem;
+		border-radius: 12px;
+		text-align: center;
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	.option-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	}
+
+	.option-card h3 {
+		font-size: 1.2rem;
+		color: var(--theme-on-bg);
+		margin: 1rem 0;
+	}
+
+	.option-card p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		line-height: 1.6;
+	}
+
+	.freedom {
+		text-align: center;
+		font-size: 1.1rem;
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+		margin-top: 2rem;
+	}
+
+	.location-section {
+		margin-bottom: 3rem;
+	}
+
+	.location-options {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.location-card {
+		background: var(--theme-surface-1);
+		padding: 2rem;
+		border-radius: 12px;
+		text-align: center;
+	}
+
+	.location-card h3 {
+		font-size: 1.3rem;
+		color: var(--theme-on-bg);
+		margin: 1rem 0;
+	}
+
+	.location-card p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		line-height: 1.6;
+		margin-bottom: 0.75rem;
+	}
+
+	.choice {
+		text-align: center;
+		color: var(--theme-on-bg);
+		opacity: 0.8;
+		font-style: italic;
+	}
+
+	.questions-section {
+		background: var(--theme-surface-2);
+		padding: 2.5rem;
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.questions-section p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		font-size: 1.05rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.email-button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		background: var(--theme-primary);
+		color: var(--theme-on-primary);
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		transition: transform 0.2s, opacity 0.2s;
+	}
+
+	.email-button:hover {
+		transform: scale(1.05);
+		opacity: 0.95;
+	}
+
+	.closing {
+		margin-top: 2rem;
+		font-size: 1.15rem;
+		opacity: 1 !important;
+	}
+
+	@media (max-width: 768px) {
+		.booking-section {
+			padding: 2rem 0;
+		}
+
+		h1 {
+			font-size: 2rem;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.intro-box {
+			padding: 2rem 1.5rem;
+		}
+
+		.options-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.location-options {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-box {
+			padding: 2rem 1.5rem;
+		}
+	}
+</style>

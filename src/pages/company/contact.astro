@@ -1,11 +1,12 @@
 ---
+import { Icon } from 'astro-icon/components';
 import ContactForm from '../../components/forms/ContactForm.astro';
 import Layout from '../../layouts/Page.astro';
-import { Container } from '@components/odyssey-theme';
+import { Container, Button } from '@components/odyssey-theme';
 
 const seo = {
-	title: 'Contact | Astro Odyssey Theme',
-	description: 'Contact Page',
+	title: 'Kontakt | LunoLabs Altendorf',
+	description: 'Kontaktiere LunoLabs in Altendorf (SZ). Fragen, Projekte, Interesse an Workshops oder Mentoring? Wir freuen uns auf deine Nachricht.',
 };
 ---
 
@@ -13,20 +14,46 @@ const seo = {
 	<Container>
 		<section class="contact-hero__section">
 			<div class="contact-hero__text-section">
-				<h1>Contact Us</h1>
+				<h1>Kontakt</h1>
 				<p>
-					This is a contact form using Odyssey's form components to create a
-					contact form component. The contact form is setup to use Netlify's
-					form detection; however, it can easily be translated to other popular
-					form services such as Formspree, Getform, Formspark, etc.
+					Du hast Fragen, eine Projekt-Idee oder möchtest bei LunoLabs dabei sein?<br>
+					Schreib uns einfach – wir freuen uns, dich kennenzulernen.
 				</p>
-				<div>
-					<p>
-						<em><a href="tel:8008675309">(800) 867-5309</a></em> • <em
-							><a href="mailto:hello@odysseytheme.com">hello@ourcompany.com</a
-							></em
-						>
+
+				<div class="contact-details">
+					<h2>Email</h2>
+					<p class="email">
+						📧 <strong><a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></strong>
 					</p>
+					<p class="response-time">Wir antworten in der Regel innerhalb eines Tages.</p>
+
+					<h2>Standort</h2>
+					<p class="location">
+						📍 <strong>Altendorf, Schwyz</strong><br>
+						Zentral zwischen Zürich und Zug, direkt an der A3 – gut erreichbar, nah, persönlich.
+					</p>
+
+					<h2>Social Media</h2>
+					<p class="social-note"><em>(Wir bauen gerade alles auf – folge uns gerne schon jetzt)</em></p>
+					<p class="social-links">
+						📷 Instagram: <strong>@lunolabs_sz</strong> <em>(coming soon)</em><br>
+						💼 LinkedIn: <strong>LunoLabs</strong> <em>(coming soon)</em>
+					</p>
+
+					<h2>Offene Fragen?</h2>
+					<p>
+						Wenn du möchtest, können wir gerne ein ganz unverbindliches Kennenlernen
+						per Video-Call oder vor Ort vereinbaren.
+					</p>
+					<div class="cta-buttons">
+						<Button href="/buchen" customIcon>
+							Kostenloses Kennenlernen buchen
+							<Fragment slot="icon">
+								<Icon name="ic:baseline-chevron-right"/>
+							</Fragment>
+						</Button>
+					</div>
+					<p class="closing">Wir freuen uns auf dich.</p>
 				</div>
 			</div>
 			<div class="col-2__container">
@@ -52,14 +79,85 @@ const seo = {
 		background-color: var(--theme-surface-1);
 		border-radius: var(--theme-shape-radius);
 	}
+	.contact-hero__text-section h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	.contact-hero__text-section > p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: var(--theme-text-secondary);
+	}
+
+	.contact-details h2 {
+		font-size: 1.5rem;
+		margin-top: 2rem;
+		margin-bottom: 0.5rem;
+		color: var(--theme-primary);
+	}
+	.contact-details h2:first-of-type {
+		margin-top: 0;
+	}
+
+	.email {
+		font-size: 1.1rem;
+		margin: 0.5rem 0;
+	}
+	.email a {
+		text-decoration: none;
+		color: var(--theme-primary);
+	}
+	.email a:hover {
+		text-decoration: underline;
+	}
+
+	.response-time {
+		font-size: 0.95rem;
+		color: var(--theme-text-secondary);
+		font-style: italic;
+		margin-bottom: 1rem;
+	}
+
+	.location {
+		font-size: 1.05rem;
+		line-height: 1.6;
+		margin: 0.5rem 0 1rem;
+	}
+
+	.social-note {
+		font-size: 0.95rem;
+		color: var(--theme-text-secondary);
+		margin: 0.5rem 0;
+	}
+	.social-links {
+		font-size: 1.05rem;
+		line-height: 1.8;
+		margin: 0.5rem 0 1rem;
+	}
+
+	.cta-buttons {
+		margin: 1.5rem 0;
+	}
+
+	.closing {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin-top: 1.5rem;
+		color: var(--theme-primary);
+	}
+
 	.col-2__container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
+
 	@media (max-width: 768px) {
 		.contact-hero__section {
 			grid-template-columns: 1fr;
+		}
+		.contact-hero__text-section h1 {
+			font-size: 2.5rem;
 		}
 	}
 </style>

@@ -1,0 +1,522 @@
+---
+import Layout from '../layouts/Page.astro';
+import Container from '../components/core/Container.astro';
+import { Icon } from 'astro-icon/components';
+
+const seo = {
+	title: 'Build Board - Aktuelle Projekte | LunoLabs Altendorf',
+	description: 'Das LunoLabs Build Board zeigt aktuelle Projekte, Ideen und was gerade im Tech Workspace entsteht. Community-driven, transparent, inspirierend.',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<section class="buildboard-section">
+			<h1><Icon name="ic:baseline-construction" /> LunoLabs Build Board</h1>
+			<h2 class="subtitle">Was wir gerade bauen, brauchen & träumen</h2>
+
+			<div class="intro-box">
+				<p>Hier sammeln wir alles, was wir gemeinsam bauen, ausprobieren, verbessern oder brauchen.</p>
+				<p><strong>Dies ist keine Wunschliste. Dies ist ein Startpunkt.</strong></p>
+				<p>Wenn du eine Idee hast:</p>
+				<ul>
+					<li>Poste sie.</li>
+					<li>Auch wenn sie unfertig ist.</li>
+					<li>Vor allem, wenn sie verrückt ist.</li>
+				</ul>
+				<p class="tagline"><strong>Wir bauen diese Zukunft gemeinsam.</strong></p>
+			</div>
+
+			<div class="projects-section">
+				<h2><Icon name="ic:baseline-engineering" /> Aktuelle Projekte</h2>
+
+				<div class="project-card">
+					<div class="project-image">
+						<img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800&h=500&fit=crop" alt="Roboterarm Prototyp" />
+					</div>
+					<div class="project-header">
+						<h3><Icon name="ic:baseline-precision-manufacturing" /> 6-Achsen Roboterarm</h3>
+						<span class="status development">In Entwicklung</span>
+					</div>
+					<p class="tech-stack"><strong>Tech:</strong> 3D-Druck, Arduino, Servomotoren, Python</p>
+					<p>Ein funktionsfähiger Roboterarm, gesteuert über PC – von der CAD-Zeichnung bis zur Steuerungssoftware alles selbst entwickelt. Perfekt, um Kinematik, Elektronik und Programmierung zu verstehen.</p>
+				</div>
+
+				<div class="project-card">
+					<div class="project-header">
+				<div class="project-image">
+					<img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=500&fit=crop" alt="FPV Drohne" />
+				</div>
+						<h3><Icon name="ic:baseline-flight" /> FPV-Drohne Build</h3>
+						<span class="status prototyping">Prototyping</span>
+					</div>
+					<p class="tech-stack"><strong>Tech:</strong> Carbon Frame, Flight Controller, FPV-Kamera</p>
+					<p>Von der Teileliste bis zum ersten Flug – gemeinsam eine FPV-Renndrohne bauen und verstehen, wie moderne Flugtechnik funktioniert.</p>
+				</div>
+
+				<div class="project-card">
+				<div class="project-image">
+					<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop" alt="IoT Wetterstation" />
+				</div>
+					<div class="project-header">
+						<h3><Icon name="ic:baseline-wb-sunny" /> IoT Wetterstation</h3>
+						<span class="status beta">Beta-Testing</span>
+					</div>
+					<p class="tech-stack"><strong>Tech:</strong> ESP32, BME280 Sensor, OLED-Display, MQTT</p>
+					<p>Eine smarte Wetterstation, die Temperatur, Luftfeuchtigkeit und Luftdruck misst – und die Daten live auf einem Dashboard anzeigt.</p>
+				</div>
+
+				<div class="project-card">
+					<div class="project-header">
+						<h3><Icon name="ic:baseline-keyboard" /> Custom Mechanical Keyboard</h3>
+						<span class="status design">Design Phase</span>
+				<div class="project-image">
+					<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&h=500&fit=crop" alt="Mechanische Tastatur" />
+				</div>
+					</div>
+					<p class="tech-stack"><strong>Tech:</strong> 3D-Druck, Cherry MX Switches, QMK Firmware</p>
+					<p>Eine vollständig selbstgebaute mechanische Tastatur – von der Gehäuse-Planung über die Verkabelung bis zur programmierbaren Firmware.</p>
+				</div>
+			</div>
+
+			<div class="needs-section">
+				<h2><Icon name="ic:baseline-handyman" /> Wir brauchen gerade:</h2>
+				<ul class="needs-list">
+					<li><Icon name="ic:baseline-check-box-outline-blank" /> Ein kleines Regal für Elektronik-Teile</li>
+					<li><Icon name="ic:baseline-check-box-outline-blank" /> Eine Halterung für den Roboterarm</li>
+					<li><Icon name="ic:baseline-check-box-outline-blank" /> Sensor-Kabel (Dupont / JST)</li>
+					<li><Icon name="ic:baseline-check-box-outline-blank" /> Holzreste (8–12 mm)</li>
+					<li><Icon name="ic:baseline-check-box-outline-blank" /> LED-Streifen für Beleuchtung</li>
+				</ul>
+				<p class="note">Wenn du etwas davon hast: bring es einfach mit.</p>
+			</div>
+
+			<div class="ideas-section">
+				<h2><Icon name="ic:baseline-lightbulb" /> Ideen & Skizzen</h2>
+				<p class="section-intro">(Hier können Schüler*innen Bilder oder Text posten – direkt, ohne Bewertung)</p>
+
+				<div class="ideas-grid">
+					<div class="idea-card">
+						<p>"Können wir einen kleinen Greifarm fürs Handy bauen?"</p>
+					</div>
+					<div class="idea-card">
+						<p>"Was wenn wir ein Auto machen, das Linien folgen kann?"</p>
+					</div>
+					<div class="idea-card">
+						<p>"Ein Mini-Automat der Süssigkeiten ausgibt?"</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="progress-section">
+				<h2><Icon name="ic:baseline-timeline" /> Baufortschritte & Experimente</h2>
+				<p>Hier darf alles rein was wir gerade versuchen:</p>
+				<ul>
+					<li><Icon name="ic:baseline-emoji-events" /> Erfolge</li>
+					<li><Icon name="ic:baseline-settings" /> Zwischenschritte</li>
+					<li><Icon name="ic:baseline-sentiment-satisfied" /> Fails die lustig sind</li>
+					<li><Icon name="ic:baseline-science" /> Dinge die nicht geklappt haben (aber gut waren)</li>
+				</ul>
+				<p class="highlight">Wir feiern <strong>das Machen</strong>, nicht nur das Ergebnis.</p>
+			</div>
+
+			<div class="cta-section">
+				<h2>Du hast auch eine Idee?</h2>
+				<p>Das Build Board wächst mit dir.<br>Bring deine Projekt-Idee mit – und in ein paar Wochen steht sie hier.</p>
+				<div class="cta-buttons">
+					<a href="mailto:info@lunolabs.ch" class="cta-button primary">
+						<Icon name="ic:baseline-email" /> info@lunolabs.ch
+					</a>
+					<a href="/company/contact" class="cta-button secondary">
+						<Icon name="ic:baseline-calendar-today" /> Kostenloses Kennenlernen buchen
+					</a>
+				</div>
+			</div>
+
+			<p class="update-note">Diese Seite wird laufend aktualisiert. Schau immer wieder vorbei, um zu sehen, was gerade im Lab passiert.</p>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.buildboard-section {
+		padding: 4rem 0;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+		color: var(--theme-on-bg);
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.subtitle {
+		font-size: 1.4rem;
+		color: var(--theme-on-bg);
+		opacity: 0.7;
+		margin-bottom: 3rem;
+	}
+
+	.intro-box {
+		background: var(--theme-surface-1);
+		padding: 2rem;
+		border-radius: 16px;
+		margin-bottom: 4rem;
+		border-left: 4px solid var(--theme-primary);
+	}
+
+	.intro-box p {
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.intro-box ul {
+		margin: 1rem 0 1rem 2rem;
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+	}
+
+	.intro-box li {
+		margin-bottom: 0.5rem;
+	}
+
+	.tagline {
+		font-size: 1.1rem;
+		margin-top: 1.5rem;
+	}
+
+	.projects-section {
+		margin-bottom: 4rem;
+	}
+
+	.projects-section h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		color: var(--theme-primary);
+	}
+
+	.project-card {
+		background: var(--theme-surface-1);
+		padding: 2rem;
+		border-radius: 12px;
+		margin-bottom: 1.5rem;
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	.project-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	}
+
+	.project-image {
+		width: 100%;
+		height: 250px;
+		overflow: hidden;
+		border-radius: 8px;
+		margin-bottom: 1.5rem;
+	}
+
+	.project-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s;
+	}
+
+	.project-card:hover .project-image img {
+		transform: scale(1.05);
+	}
+
+	.project-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.project-header h3 {
+		font-size: 1.4rem;
+		color: var(--theme-on-bg);
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin: 0;
+	}
+
+	.status {
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.85rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.status.development {
+		background: #ffd700;
+		color: #000;
+	}
+
+	.status.prototyping {
+		background: #ff8c00;
+		color: #fff;
+	}
+
+	.status.beta {
+		background: #32cd32;
+		color: #fff;
+	}
+
+	.status.design {
+		background: #9370db;
+		color: #fff;
+	}
+
+	.tech-stack {
+		color: var(--theme-on-bg);
+		opacity: 0.8;
+		font-size: 0.95rem;
+		margin-bottom: 1rem;
+	}
+
+	.project-card > p:last-child {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		line-height: 1.7;
+	}
+
+	.needs-section {
+		background: var(--theme-surface-2);
+		padding: 2rem;
+		border-radius: 16px;
+		margin-bottom: 4rem;
+	}
+
+	.needs-section h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+		color: var(--theme-on-bg);
+	}
+
+	.needs-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.needs-list li {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		margin-bottom: 1rem;
+		font-size: 1.05rem;
+	}
+
+	.note {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--theme-on-surface-2);
+		color: var(--theme-on-bg);
+		opacity: 0.7;
+		font-style: italic;
+	}
+
+	.ideas-section {
+		margin-bottom: 4rem;
+	}
+
+	.ideas-section h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: var(--theme-primary);
+	}
+
+	.section-intro {
+		color: var(--theme-on-bg);
+		opacity: 0.7;
+		margin-bottom: 2rem;
+		font-style: italic;
+	}
+
+	.ideas-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.idea-card {
+		background: var(--theme-surface-1);
+		padding: 1.5rem;
+		border-radius: 12px;
+		border-left: 3px solid var(--theme-primary);
+	}
+
+	.idea-card p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		font-style: italic;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.progress-section {
+		margin-bottom: 4rem;
+	}
+
+	.progress-section h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+		color: var(--theme-primary);
+	}
+
+	.progress-section p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.progress-section ul {
+		list-style: none;
+		margin: 1.5rem 0;
+		padding: 0;
+	}
+
+	.progress-section li {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		margin-bottom: 1rem;
+		font-size: 1.05rem;
+	}
+
+	.highlight {
+		font-size: 1.1rem;
+		margin-top: 1.5rem;
+	}
+
+	.cta-section {
+		background: linear-gradient(135deg, var(--theme-primary), var(--theme-primary-hover));
+		color: var(--theme-on-primary);
+		padding: 3rem;
+		border-radius: 20px;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.cta-section h2 {
+		color: var(--theme-on-primary);
+		margin-bottom: 1rem;
+	}
+
+	.cta-section p {
+		color: var(--theme-on-primary);
+		opacity: 0.95;
+		font-size: 1.1rem;
+		line-height: 1.7;
+		margin-bottom: 2rem;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.cta-button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: transform 0.2s, opacity 0.2s;
+	}
+
+	.cta-button:hover {
+		transform: scale(1.05);
+	}
+
+	.cta-button.primary {
+		background: var(--theme-on-primary);
+		color: var(--theme-primary);
+	}
+
+	.cta-button.secondary {
+		background: transparent;
+		color: var(--theme-on-primary);
+		border: 2px solid var(--theme-on-primary);
+	}
+
+	.cta-button.secondary:hover {
+		background: var(--theme-on-primary);
+		color: var(--theme-primary);
+	}
+
+	.update-note {
+		text-align: center;
+		color: var(--theme-on-bg);
+		opacity: 0.6;
+		font-style: italic;
+		font-size: 0.95rem;
+	}
+
+	@media (max-width: 768px) {
+		.buildboard-section {
+			padding: 2rem 0;
+		}
+
+		h1 {
+			font-size: 2rem;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.subtitle {
+			font-size: 1.2rem;
+		}
+
+		.project-header {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.ideas-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.cta-button {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+</style>

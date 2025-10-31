@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Page.astro';
+import BuilderPage from '../components/BuilderPage';
+
+const apiKey = import.meta.env.PUBLIC_BUILDER_API_KEY;
+
+const seo = {
+	title: 'Builder.io Demo | LunoLabs',
+	description: 'Test-Seite für Builder.io visuellen Editor',
+};
+---
+
+<Layout {seo}>
+	<BuilderPage client:load model="page" apiKey={apiKey} />
+</Layout>

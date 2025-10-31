@@ -1,0 +1,338 @@
+---
+import Layout from '../layouts/Page.astro';
+import Container from '../components/core/Container.astro';
+import { Icon } from 'astro-icon/components';
+
+const seo = {
+	title: 'Häufige Fragen (FAQ) | LunoLabs Altendorf',
+	description: 'Alle wichtigen Antworten zu LunoLabs: Kosten, Öffnungszeiten, Vorkenntnisse, Ausstattung und wie du mitmachen kannst.',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<section class="faq-section">
+			<h1>Häufig gestellte Fragen (FAQ)</h1>
+			<p class="intro">Hier findest du Antworten auf die wichtigsten Fragen rund um LunoLabs.</p>
+
+			<div class="faq-category">
+				<h2><Icon name="ic:baseline-help" /> Allgemeines</h2>
+
+				<div class="faq-item">
+					<h3>Was ist LunoLabs?</h3>
+					<p>LunoLabs ist ein Tech Workspace in Altendorf (SZ), in dem Jugendliche und Erwachsene Technologie hands-on erleben. Wir bieten Zugang zu Werkzeugen, Maschinen und Know-how – von 3D-Druck über Robotik bis CNC.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Wann startet LunoLabs?</h3>
+					<p>Wir starten im <strong>Frühling 2026</strong>. Vorregistrierungen und Kennenlerngespräche sind bereits möglich.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Wo genau befindet sich LunoLabs?</h3>
+					<p><Icon name="ic:baseline-place" /> <strong>Altendorf, Schwyz</strong> – zentral zwischen Zürich und Zug, direkt an der A3. Die genaue Adresse geben wir nach der Anmeldung bekannt.</p>
+				</div>
+			</div>
+
+			<div class="faq-category">
+				<h2><Icon name="ic:baseline-people" /> Für wen ist LunoLabs?</h2>
+
+				<div class="faq-item">
+					<h3>Muss ich Vorkenntnisse haben?</h3>
+					<p><strong>Nein!</strong> Neugier reicht völlig. Wir begleiten dich von den Basics bis zu fortgeschrittenen Projekten.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Für welches Alter ist LunoLabs geeignet?</h3>
+					<p><strong>Jugendliche ab 12 Jahren</strong> und <strong>Erwachsene jeden Alters</strong> sind willkommen. Für Kinder unter 12 sprechen wir gerne individuell.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Kann ich als Erwachsener mitmachen?</h3>
+					<p>Absolut! LunoLabs ist für alle, die Technik erleben wollen – egal ob Quereinsteiger, Hobby-Maker oder Tech-Enthusiast.</p>
+				</div>
+			</div>
+
+			<div class="faq-category">
+				<h2><Icon name="ic:baseline-attach-money" /> Angebote & Preise</h2>
+
+				<div class="faq-item">
+					<h3>Was bietet LunoLabs an?</h3>
+					<ul>
+						<li>Workshops & Kurse (3D-Druck, Elektronik, Robotik, CAD, Programmierung)</li>
+						<li>Gemeinsame Projekte (Roboterarme, Drohnen, Smart-Home-Gadgets)</li>
+						<li>1:1 Mentoring (für Abschlussarbeiten, Schulprojekte, eigene Ideen)</li>
+						<li>Werkstatt- & Maschinenzugang (mit Einführung und Betreuung)</li>
+					</ul>
+				</div>
+
+				<div class="faq-item">
+					<h3>Was kostet die Teilnahme?</h3>
+					<p>Wir arbeiten an verschiedenen Preismodellen:</p>
+					<ul>
+						<li><strong>Workshops:</strong> Ab CHF 50.- pro Session</li>
+						<li><strong>Mentoring:</strong> Ab CHF 80.-/Stunde</li>
+						<li><strong>Werkstattzugang:</strong> Monatliche Mitgliedschaft geplant</li>
+					</ul>
+					<p>Genaue Preise geben wir beim Kennenlernen bekannt. Für Jugendliche gibt es vergünstigte Tarife.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Gibt es Schnupperangebote?</h3>
+					<p>Ja! Das erste Kennenlernen (15 Min.) ist <strong>kostenlos und unverbindlich</strong>.</p>
+				</div>
+			</div>
+
+			<div class="faq-category">
+				<h2><Icon name="ic:baseline-build" /> Ausstattung & Werkstatt</h2>
+
+				<div class="faq-item">
+					<h3>Welche Maschinen gibt es?</h3>
+
+					<h4>Produktion & Fertigung:</h4>
+					<ul>
+						<li>3D-Drucker (FDM & Resin)</li>
+						<li>Laser-Cutter & Gravur</li>
+						<li>CNC-Fräse & Drehbank</li>
+						<li>Handwerkzeuge</li>
+					</ul>
+
+					<h4>Elektronik & Programmierung:</h4>
+					<ul>
+						<li>Mikrocontroller (Arduino, ESP32, Raspberry Pi)</li>
+						<li>Sensoren, Motoren, Aktorik</li>
+						<li>Lötstation & Messgeräte</li>
+					</ul>
+
+					<h4>Robotik:</h4>
+					<ul>
+						<li>Servomotoren, Schrittmotoren</li>
+						<li>Roboterarme</li>
+						<li>Bildverarbeitung & Sensoren</li>
+					</ul>
+				</div>
+
+				<div class="faq-item">
+					<h3>Kann ich die Werkstatt frei nutzen?</h3>
+					<p>Ja, nach einer <strong>Einführung in die Maschinen</strong>. Wir achten auf Sicherheit und verantwortungsvollen Umgang.</p>
+				</div>
+			</div>
+
+			<div class="faq-category">
+				<h2><Icon name="ic:baseline-construction" /> Workshops & Projekte</h2>
+
+				<div class="faq-item">
+					<h3>Wie läuft ein Workshop ab?</h3>
+					<p>Hands-on, Schritt für Schritt, mit echten Projekten. Kein Frontalunterricht – <strong>du machst selbst</strong>.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Kann ich eigene Projekt-Ideen umsetzen?</h3>
+					<p>Auf jeden Fall! Das ist genau unser Ziel. Wir begleiten dich dabei.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Was passiert, wenn ich nicht fertig werde?</h3>
+					<p>Kein Stress. Projekte dürfen so lange dauern, wie sie brauchen. Wir arbeiten in deinem Tempo.</p>
+				</div>
+			</div>
+
+			<div class="faq-category">
+				<h2><Icon name="ic:baseline-contact-mail" /> Anmeldung & Kontakt</h2>
+
+				<div class="faq-item">
+					<h3>Wie kann ich mitmachen?</h3>
+					<ol>
+						<li><strong>Kostenloses Kennenlernen buchen:</strong> <a href="/company/contact">Termin buchen</a></li>
+						<li><strong>E-Mail schreiben:</strong> <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></li>
+						<li><strong>Vorbeikommen:</strong> Nach Vereinbarung</li>
+					</ol>
+				</div>
+
+				<div class="faq-item">
+					<h3>Kann ich spontan vorbeikommen?</h3>
+					<p>Aktuell arbeiten wir noch nach Terminvereinbarung. Ab Frühjahr 2026 gibt es feste Öffnungszeiten.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Wie erreiche ich euch?</h3>
+					<ul class="contact-list">
+						<li><Icon name="ic:baseline-email" /> <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></li>
+						<li><Icon name="ic:baseline-place" /> Altendorf, Schwyz</li>
+						<li><Icon name="ic:baseline-language" /> <a href="https://lunolabs.ch">lunolabs.ch</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="cta-box">
+				<h2>Noch Fragen?</h2>
+				<p>Deine Frage war nicht dabei? Schreib uns einfach:</p>
+				<p><strong><a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></strong></p>
+				<p class="response-time">Wir antworten in der Regel innerhalb eines Tages.</p>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.faq-section {
+		padding: 4rem 0;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: var(--theme-on-bg);
+	}
+
+	.intro {
+		font-size: 1.2rem;
+		color: var(--theme-on-bg);
+		opacity: 0.8;
+		margin-bottom: 3rem;
+	}
+
+	.faq-category {
+		margin-bottom: 3rem;
+		padding: 2rem;
+		background: var(--theme-surface-1);
+		border-radius: 12px;
+	}
+
+	.faq-category h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		color: var(--theme-primary);
+	}
+
+	.faq-item {
+		margin-bottom: 2rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid var(--theme-on-surface-1);
+	}
+
+	.faq-item:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.faq-item h3 {
+		font-size: 1.3rem;
+		margin-bottom: 0.75rem;
+		color: var(--theme-on-bg);
+	}
+
+	.faq-item h4 {
+		font-size: 1.1rem;
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+		color: var(--theme-on-bg);
+	}
+
+	.faq-item p {
+		line-height: 1.7;
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+	}
+
+	.faq-item ul,
+	.faq-item ol {
+		line-height: 1.8;
+		margin-left: 1.5rem;
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+	}
+
+	.faq-item li {
+		margin-bottom: 0.5rem;
+	}
+
+	.faq-item a {
+		color: var(--theme-primary);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.faq-item a:hover {
+		text-decoration: underline;
+	}
+
+	.contact-list {
+		list-style: none;
+		margin-left: 0;
+	}
+
+	.contact-list li {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.cta-box {
+		margin-top: 4rem;
+		padding: 2.5rem;
+		background: linear-gradient(135deg, var(--theme-primary), var(--theme-primary-hover));
+		color: var(--theme-on-primary);
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.cta-box h2 {
+		color: var(--theme-on-primary);
+		margin-bottom: 1rem;
+	}
+
+	.cta-box p {
+		color: var(--theme-on-primary);
+		opacity: 0.95;
+	}
+
+	.cta-box a {
+		color: var(--theme-on-primary);
+		font-weight: bold;
+		text-decoration: none;
+		border-bottom: 2px solid var(--theme-on-primary);
+	}
+
+	.cta-box a:hover {
+		opacity: 0.9;
+	}
+
+	.response-time {
+		font-size: 0.95rem;
+		opacity: 0.85;
+		margin-top: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		.faq-section {
+			padding: 2rem 0;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		.intro {
+			font-size: 1.1rem;
+		}
+
+		.faq-category {
+			padding: 1.5rem;
+		}
+
+		.faq-category h2 {
+			font-size: 1.5rem;
+		}
+
+		.cta-box {
+			padding: 2rem 1.5rem;
+		}
+	}
+</style>

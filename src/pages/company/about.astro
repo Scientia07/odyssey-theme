@@ -1,47 +1,458 @@
 ---
-import { TextSection } from '@components/odyssey-theme';
+import { Icon } from 'astro-icon/components';
+import { TextSection, Container, Button } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
-	title: 'About | Astro Odyssey Theme',
-	description: 'About Page',
+	title: 'Über LunoLabs | Tech Workspace Altendorf',
+	description: 'LunoLabs ist ein Tech Workspace in Altendorf (SZ) für innovative Projekte. Professionelle Infrastruktur für Prototyping, Entwicklung und Produktion.',
 };
 ---
 
 <Layout {seo}>
 	<HeroSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
+			<h1>Über LunoLabs</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
-				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
-				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
-				Numquam.
+				LunoLabs ist ein <strong>Tech Workspace in Altendorf (SZ)</strong>, der Menschen
+				und Unternehmen zeigt, wie <strong>Technologie greifbar wird</strong>,
+				wenn man sie hands-on erlebt.
 			</p>
+			<p>
+				Wir glauben, dass Lernen am <strong>besten durch Machen</strong> geschieht.<br>
+				Nicht durch langes Erklären.<br>
+				Nicht durch stundenlanges Zuschauen.
+			</p>
+			<p class="highlight">Sondern indem man selbst baut.</p>
 		</div>
-    <picture slot="image-container">
-      <img
-        src="/assets/images/home/classic-hero.jpg"
-        alt="Astro Odyssee"
-        id="home-hero-image"
-      />
-    </picture>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/earth-hero.jpg"
+				alt="LunoLabs Tech Workspace - Hands-on Technologie"
+				id="home-hero-image"
+			/>
+		</picture>
 	</HeroSection>
-  <TextSection narrow>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo asperiores alias illo accusamus voluptatem ea cum nemo odit! Consequatur quidem quo iusto quam ea neque nisi dolorum quod, recusandae id!
-      Repudiandae, fugit labore voluptatum beatae modi omnis adipisci corrupti aut aliquid cumque inventore iure possimus doloremque iste incidunt nulla architecto. Nobis iusto sunt voluptatem necessitatibus laborum, earum doloremque fugit rerum!
-    </p>
-    <p>Fugit asperiores harum consectetur sapiente deleniti. Optio enim tenetur impedit reprehenderit labore, illo eius in, consequatur odio dolore iste assumenda explicabo, nisi similique qui obcaecati possimus delectus reiciendis quod modi.</p>
-    
-    <p>
-      Vel tempore rem omnis esse officiis optio, explicabo, quod deleniti adipisci ullam cum necessitatibus eius minus vero saepe ad, dicta rerum praesentium deserunt illo itaque odio corrupti voluptatum quibusdam. Pariatur.
-      Porro neque tempore, illum eligendi deleniti iure dolorem amet magnam at dolores veniam nemo cumque aut alias repellat est dicta sit repellendus facilis officia? Minima dolorum quo ducimus adipisci perferendis.
-    </p>
-    <p>
-      Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt, voluptatibus rem eum fuga modi beatae cum ullam delectus dicta atque eius nam quos corporis. Animi praesentium quae nobis. Odit, mollitia. Voluptatum, hic explicabo. Ex accusamus ipsa ea dolor commodi quas esse ipsum alias et adipisci error necessitatibus atque facere rerum ratione consequatur aspernatur repudiandae minima consectetur fuga, doloremque dolorum pariatur.
-      Ipsam error eaque velit possimus porro eum quod illo iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit minus?
-    </p>
-  </TextSection>
+
+	<!-- Vision Section -->
+	<Container>
+		<section class="vision-section">
+			<h2>Unsere Vision</h2>
+			<p class="lead">Wir möchten einen Ort schaffen, an dem Menschen:</p>
+			<div class="vision-grid">
+				<div class="vision-item">
+					<Icon name="ic:baseline-science" />
+					<p>frei experimentieren können</p>
+				</div>
+				<div class="vision-item">
+					<Icon name="ic:baseline-build" />
+					<p>Dinge auseinandernehmen und verstehen</p>
+				</div>
+				<div class="vision-item">
+					<Icon name="ic:baseline-lightbulb" />
+					<p>eigene Ideen umsetzen</p>
+				</div>
+				<div class="vision-item">
+					<Icon name="ic:baseline-trending-up" />
+					<p>Fehler machen dürfen und daraus wachsen</p>
+				</div>
+				<div class="vision-item">
+					<Icon name="ic:baseline-emoji-people" />
+					<p>entdecken, was in ihnen steckt</p>
+				</div>
+			</div>
+		</section>
+	</Container>
+
+	<TextSection narrow>
+		<p class="highlight-text">
+			Technologie soll <strong>inspirieren</strong>, nicht einschüchtern.<br>
+			Sie soll <strong>verständlich</strong> und <strong>zugänglich</strong> sein.<br>
+			Vor allem aber soll sie <strong>Spass machen</strong>.
+		</p>
+		<p class="belief">
+			Wir glauben daran, dass <strong>Jugend und Kreativität</strong> die Welt von morgen gestalten.<br>
+			Und wir wollen diesen Weg aktiv mit aufbauen.
+		</p>
+	</TextSection>
+
+	<!-- Mission Section -->
+	<Container>
+		<section class="mission-section">
+			<h2>Unsere Mission</h2>
+			<div class="mission-grid">
+				<div class="mission-column">
+					<h3>Viele Jugendliche sind neugierig und voller Ideen – aber ihnen fehlt oft:</h3>
+					<ul class="problem-list">
+						<li>ein Ort zum Ausprobieren</li>
+						<li>jemand, der sie ernst nimmt</li>
+						<li>Werkzeuge, die etwas verändern können</li>
+					</ul>
+				</div>
+				<div class="mission-column solution">
+					<h3>LunoLabs gibt ihnen:</h3>
+					<ul class="solution-list">
+						<li><Icon name="ic:baseline-check-circle" /> <strong>Zugang zu Maschinen, Werkzeugen und Know-how</strong></li>
+						<li><Icon name="ic:baseline-check-circle" /> <strong>Gemeinschaft statt Konkurrenz</strong></li>
+						<li><Icon name="ic:baseline-check-circle" /> <strong>Begleitung statt Druck</strong></li>
+						<li><Icon name="ic:baseline-check-circle" /> <strong>Mut statt Angst vor Fehlern</strong></li>
+					</ul>
+				</div>
+			</div>
+			<p class="mission-goal">
+				Wir helfen ihnen, <strong>Selbstvertrauen</strong> und <strong>Zukunftsskills</strong> aufzubauen.
+			</p>
+		</section>
+	</Container>
+
+	<!-- Founder Section -->
+	<Container>
+		<section class="founder-section">
+			<h2>Wer wir sind</h2>
+			<div class="founder-card">
+				<div class="founder-image">
+					<img src="/assets/images/home/classic-hero.jpg" alt="Joel Nyffeler" />
+				</div>
+				<div class="founder-content">
+					<h3>Joel Nyffeler</h3>
+					<p class="founder-title">Mentor, Maker, Techniker, Wissens-Teiler.</p>
+					<p>
+						Ich arbeite seit Jahren in der IT, Elektronik und mit 3D-Technologien.
+						Was mich antreibt, ist nicht die Technik an sich – sondern <strong>Menschen dabei zu
+						begleiten, damit etwas zu erschaffen</strong>.
+					</p>
+					<blockquote>
+						<p>Ich liebe es, wenn Jugendliche plötzlich sagen:</p>
+						<p class="quote">„Ah! Jetzt habe ich es verstanden!"</p>
+						<p class="or">oder</p>
+						<p class="quote">„Ich hätte nie gedacht, dass ich sowas selbst bauen kann."</p>
+					</blockquote>
+					<p class="philosophy">
+						Wir teilen Wissen.<br>
+						Wir teilen Ideen.<br>
+						Wir gestalten Technologie gemeinsam.
+					</p>
+				</div>
+			</div>
+		</section>
+	</Container>
+
+	<!-- Location Section -->
+	<Container>
+		<section class="location-section">
+			<h2>Warum Altendorf?</h2>
+			<p class="lead">
+				Altendorf ist ein Ort mit Ruhe, Herz und Gemeinschaft.<br>
+				Ein Ort, an dem Dinge wachsen dürfen.
+			</p>
+			<p>Hier entsteht ein Raum, in dem:</p>
+			<ul class="location-list">
+				<li>Ideen willkommen sind</li>
+				<li>Lernen natürlich passiert</li>
+				<li>Menschen zusammensitzen, löten, drücken, zeichnen, erschaffen</li>
+			</ul>
+			<p class="highlight-text">
+				Ein Ort, an dem <strong>Innovation persönlich</strong> bleibt – ohne Grossstadt-Hektik.
+			</p>
+		</section>
+	</Container>
+
+	<!-- CTA Section -->
+	<Container>
+		<section class="cta-section">
+			<h2>Komm dazu</h2>
+			<p class="lead">
+				Egal, ob du 13 bist und etwas bauen willst,<br>
+				oder 43 und endlich anfangen möchtest:
+			</p>
+			<p class="welcome"><strong>Du bist willkommen.</strong></p>
+			<div class="contact-info">
+				<p>📧 <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></p>
+				<p>📍 Altendorf, Schwyz</p>
+			</div>
+			<p class="tagline">Lass uns gemeinsam etwas erschaffen.</p>
+			<div class="cta-buttons">
+				<Button href="/company/contact" customIcon>
+					Kontakt aufnehmen
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-chevron-right"/>
+					</Fragment>
+				</Button>
+				<Button href="/buchen" unelevated>Kostenloses Kennenlernen buchen</Button>
+			</div>
+		</section>
+	</Container>
 </Layout>
+
+<style>
+	.highlight {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: var(--theme-primary);
+		margin-top: 1rem;
+	}
+
+	/* Vision Section */
+	.vision-section {
+		margin: var(--section-margin) auto;
+		text-align: center;
+	}
+	.vision-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	.vision-section .lead {
+		font-size: 1.3rem;
+		margin-bottom: 3rem;
+		color: var(--theme-text-secondary);
+	}
+	.vision-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+	.vision-item {
+		padding: 2rem 1rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+	.vision-item svg {
+		width: 3rem;
+		height: 3rem;
+		color: var(--theme-primary);
+	}
+	.vision-item p {
+		font-size: 1.1rem;
+		margin: 0;
+	}
+
+	/* Text Highlights */
+	.highlight-text {
+		font-size: 1.3rem;
+		line-height: 1.8;
+		text-align: center;
+		margin: 2rem 0;
+	}
+	.belief {
+		font-size: 1.2rem;
+		text-align: center;
+		margin-top: 2rem;
+		padding: 2rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+
+	/* Mission Section */
+	.mission-section {
+		margin: var(--section-margin) auto;
+	}
+	.mission-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+	.mission-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		margin-bottom: 3rem;
+	}
+	.mission-column h3 {
+		font-size: 1.3rem;
+		margin-bottom: 1.5rem;
+	}
+	.problem-list {
+		list-style: none;
+		padding: 0;
+	}
+	.problem-list li {
+		padding: 1rem;
+		margin: 0.5rem 0;
+		background: var(--theme-surface-1);
+		border-left: 4px solid var(--theme-text-secondary);
+		border-radius: var(--theme-shape-radius);
+	}
+	.solution-list {
+		list-style: none;
+		padding: 0;
+	}
+	.solution-list li {
+		padding: 1rem;
+		margin: 0.5rem 0;
+		background: var(--theme-surface-1);
+		border-left: 4px solid var(--theme-primary);
+		border-radius: var(--theme-shape-radius);
+		display: flex;
+		align-items: start;
+		gap: 0.5rem;
+	}
+	.solution-list svg {
+		width: 1.5rem;
+		height: 1.5rem;
+		color: var(--theme-primary);
+		flex-shrink: 0;
+		margin-top: 0.2rem;
+	}
+	.mission-goal {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: 3rem;
+		padding: 2rem;
+		background: var(--theme-primary);
+		color: white;
+		border-radius: var(--theme-shape-radius);
+	}
+
+	/* Founder Section */
+	.founder-section {
+		margin: var(--section-margin) auto;
+	}
+	.founder-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+	.founder-card {
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		gap: 3rem;
+		padding: 3rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.founder-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+	}
+	.founder-content h3 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+	.founder-title {
+		font-size: 1.1rem;
+		color: var(--theme-text-secondary);
+		margin-bottom: 1.5rem;
+	}
+	.founder-content blockquote {
+		margin: 2rem 0;
+		padding: 1.5rem;
+		background: var(--theme-surface-2);
+		border-left: 4px solid var(--theme-primary);
+		border-radius: var(--theme-shape-radius);
+	}
+	.founder-content .quote {
+		font-size: 1.1rem;
+		font-style: italic;
+		margin: 0.5rem 0;
+	}
+	.founder-content .or {
+		text-align: center;
+		color: var(--theme-text-secondary);
+		margin: 1rem 0;
+	}
+	.philosophy {
+		font-size: 1.2rem;
+		margin-top: 2rem;
+		padding: 1.5rem;
+		background: var(--theme-primary);
+		color: white;
+		border-radius: var(--theme-shape-radius);
+		text-align: center;
+	}
+
+	/* Location Section */
+	.location-section {
+		margin: var(--section-margin) auto;
+		text-align: center;
+		max-width: 50rem;
+	}
+	.location-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.location-section .lead {
+		font-size: 1.3rem;
+		margin-bottom: 2rem;
+		color: var(--theme-text-secondary);
+	}
+	.location-list {
+		list-style: none;
+		padding: 0;
+		margin: 2rem 0;
+		text-align: left;
+		max-width: 35rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.location-list li {
+		padding: 1rem;
+		margin: 0.5rem 0;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+		font-size: 1.1rem;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		margin: var(--section-margin) auto;
+		text-align: center;
+		max-width: 50rem;
+		padding: 3rem 2rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.cta-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.cta-section .lead {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+	.welcome {
+		font-size: 1.8rem;
+		font-weight: 600;
+		color: var(--theme-primary);
+		margin: 2rem 0;
+	}
+	.contact-info {
+		margin: 2rem 0;
+		font-size: 1.1rem;
+	}
+	.contact-info p {
+		margin: 0.5rem 0;
+	}
+	.tagline {
+		font-size: 1.2rem;
+		margin: 2rem 0;
+		font-style: italic;
+	}
+	.cta-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 2rem;
+		flex-wrap: wrap;
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		.mission-grid {
+			grid-template-columns: 1fr;
+		}
+		.founder-card {
+			grid-template-columns: 1fr;
+		}
+		.vision-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

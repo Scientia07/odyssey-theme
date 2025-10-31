@@ -1,0 +1,576 @@
+---
+import Layout from '../layouts/Page.astro';
+import Container from '../components/core/Container.astro';
+import { Icon } from 'astro-icon/components';
+
+const seo = {
+	title: 'Preise & Angebote | LunoLabs Altendorf',
+	description: 'Transparente Preise für Workshops, Mentoring und Werkstattzugang bei LunoLabs. Faire Konditionen für Jugendliche und Erwachsene.',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<section class="pricing-section">
+			<h1>Preise & Angebote</h1>
+			<p class="intro">Technologie soll zugänglich sein – für alle.<br>Deshalb halten wir unsere Preise fair, transparent und flexibel.</p>
+
+			<div class="pricing-category">
+				<h2><Icon name="ic:baseline-school" /> Workshops & Kurse</h2>
+
+				<div class="pricing-grid">
+					<div class="pricing-card">
+						<h3>Einsteiger-Workshop</h3>
+						<p class="subtitle">Perfekt für den Start</p>
+
+						<div class="price-box">
+							<span class="price-youth">CHF 50.-</span> Jugendliche
+							<span class="divider">/</span>
+							<span class="price-adult">CHF 80.-</span> Erwachsene
+						</div>
+
+						<ul class="details">
+							<li><strong>Dauer:</strong> 2–3 Stunden</li>
+							<li><strong>Themen:</strong> 3D-Druck Basics, Arduino Intro, Löten lernen, CAD-Einstieg</li>
+							<li><strong>Gruppengrösse:</strong> Max. 6 Personen</li>
+						</ul>
+
+						<ul class="features">
+							<li><Icon name="ic:baseline-check-circle" /> Inklusive Materialien</li>
+							<li><Icon name="ic:baseline-check-circle" /> Hands-on Projekte</li>
+							<li><Icon name="ic:baseline-check-circle" /> Persönliche Betreuung</li>
+						</ul>
+					</div>
+
+					<div class="pricing-card featured">
+						<h3>Fortgeschrittenen-Kurs</h3>
+						<p class="subtitle">Für komplexere Projekte</p>
+
+						<div class="price-box">
+							<span class="price-youth">CHF 120.-</span> Jugendliche
+							<span class="divider">/</span>
+							<span class="price-adult">CHF 200.-</span> Erwachsene
+						</div>
+
+						<ul class="details">
+							<li><strong>Dauer:</strong> 4–6 Stunden (mehrere Sessions)</li>
+							<li><strong>Themen:</strong> Robotik, IoT, CNC-Fertigung, ROS-Programmierung</li>
+							<li><strong>Gruppengrösse:</strong> Max. 4 Personen</li>
+						</ul>
+
+						<ul class="features">
+							<li><Icon name="ic:baseline-check-circle" /> Inklusive Materialien & Bauteile</li>
+							<li><Icon name="ic:baseline-check-circle" /> Eigenes Projekt mit nach Hause</li>
+							<li><Icon name="ic:baseline-check-circle" /> Kleine Gruppen, intensive Betreuung</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="pricing-category">
+				<h2><Icon name="ic:baseline-person" /> Mentoring & 1:1 Begleitung</h2>
+
+				<div class="pricing-card">
+					<h3>Individuelle Projektbegleitung</h3>
+					<p class="subtitle">Für deine eigene Idee</p>
+
+					<p class="description">Du hast eine Projekt-Idee, eine Abschlussarbeit oder ein Schulprojekt? Wir begleiten dich Schritt für Schritt.</p>
+
+					<div class="price-box">
+						<span class="price-youth">CHF 60.-/Stunde</span> Jugendliche
+						<span class="divider">/</span>
+						<span class="price-adult">CHF 80.-/Stunde</span> Erwachsene
+					</div>
+
+					<ul class="details">
+						<li><strong>Flexible Termine</strong></li>
+						<li><strong>Vor Ort oder Online</strong></li>
+					</ul>
+
+					<ul class="features">
+						<li><Icon name="ic:baseline-check-circle" /> Individuell auf dich zugeschnitten</li>
+						<li><Icon name="ic:baseline-check-circle" /> Technisches Know-how & Werkstatt-Zugang</li>
+						<li><Icon name="ic:baseline-check-circle" /> Von der Idee bis zum fertigen Prototyp</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="pricing-category">
+				<h2><Icon name="ic:baseline-home-repair-service" /> Werkstatt-Zugang</h2>
+
+				<div class="pricing-grid">
+					<div class="pricing-card">
+						<h3>Open Lab Membership</h3>
+						<p class="subtitle">Freier Zugang zur kompletten Werkstatt</p>
+
+						<div class="price-box">
+							<span class="price-youth">CHF 80.-/Monat</span> Jugendliche
+							<span class="divider">/</span>
+							<span class="price-adult">CHF 150.-/Monat</span> Erwachsene
+						</div>
+
+						<ul class="details">
+							<li><strong>Zugang:</strong> Nach Verfügbarkeit & Terminvereinbarung</li>
+							<li><strong>Einführung in alle Maschinen inklusive</strong></li>
+						</ul>
+
+						<ul class="features">
+							<li><Icon name="ic:baseline-check-circle" /> 3D-Drucker, Laser, CNC, Drehbank, Elektronik</li>
+							<li><Icon name="ic:baseline-check-circle" /> Lagerung deiner Projekte vor Ort möglich</li>
+							<li><Icon name="ic:baseline-check-circle" /> Community & gegenseitige Unterstützung</li>
+						</ul>
+					</div>
+
+					<div class="pricing-card">
+						<h3>Tages-Pass</h3>
+						<p class="subtitle">Einmaliger Werkstatt-Zugang</p>
+
+						<div class="price-box">
+							<span class="price-youth">CHF 25.-</span> Jugendliche
+							<span class="divider">/</span>
+							<span class="price-adult">CHF 40.-</span> Erwachsene
+						</div>
+
+						<ul class="details">
+							<li><strong>Dauer:</strong> 1 Tag (nach Vereinbarung)</li>
+							<li><strong>Voraussetzung:</strong> Maschinen-Einführung absolviert</li>
+						</ul>
+
+						<ul class="features">
+							<li><Icon name="ic:baseline-check-circle" /> Perfekt zum Ausprobieren</li>
+							<li><Icon name="ic:baseline-check-circle" /> Ideal für einzelne Projekte</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="special-offers">
+				<div class="offer-card">
+					<Icon name="ic:baseline-school" />
+					<h3>Schulprojekte & Abschlussarbeiten</h3>
+					<p>Du machst eine Matura-Arbeit, Projekt-Arbeit oder Abschlussarbeit?</p>
+					<p>Wir bieten <strong>vergünstigte Pakete</strong> für:</p>
+					<ul>
+						<li>Projektplanung & Konzeption</li>
+						<li>Technische Beratung</li>
+						<li>Nutzung der Werkstatt</li>
+						<li>Begleitung über mehrere Wochen/Monate</li>
+					</ul>
+					<p class="contact"><Icon name="ic:baseline-email" /> Melde dich für ein individuelles Angebot: <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></p>
+				</div>
+
+				<div class="offer-card">
+					<Icon name="ic:baseline-groups" />
+					<h3>Gruppen & Schulklassen</h3>
+					<p>Ihr seid eine Schulklasse, Jugendgruppe oder ein Verein? Wir kommen zu euch oder ihr kommt zu uns.</p>
+					<ul>
+						<li><strong>Gruppengrösse:</strong> 8–15 Personen</li>
+						<li><strong>Themen:</strong> Individuell anpassbar (Robotik, 3D-Druck, Programmierung, etc.)</li>
+						<li><strong>Dauer:</strong> 2–4 Stunden</li>
+					</ul>
+					<p class="contact"><Icon name="ic:baseline-email" /> Anfrage für Gruppen: <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></p>
+				</div>
+			</div>
+
+			<div class="free-intro">
+				<h2><Icon name="ic:baseline-coffee" /> Kostenloses Kennenlernen</h2>
+				<h3>15 Minuten, 0 Kosten, 0 Verpflichtung</h3>
+				<p>Bevor du dich entscheidest, lernen wir uns kennen. Wir schauen gemeinsam:</p>
+				<ul>
+					<li>Was du machen möchtest</li>
+					<li>Welche Technologie zu dir passt</li>
+					<li>Wie wir dich am besten begleiten können</li>
+				</ul>
+				<a href="/company/contact" class="cta-button">Jetzt kostenloses Kennenlernen buchen</a>
+			</div>
+
+			<div class="faq-section">
+				<h2>Häufige Fragen zu Preisen</h2>
+
+				<div class="faq-item">
+					<h3>Kann ich auch ohne Mitgliedschaft die Werkstatt nutzen?</h3>
+					<p>Ja, mit dem Tages-Pass. Oder du buchst ein Mentoring und nutzt dabei die Werkstatt.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Gibt es Rabatte?</h3>
+					<p>Ja, für:</p>
+					<ul>
+						<li>Jugendliche unter 18 Jahren (automatisch vergünstigt)</li>
+						<li>Langfristige Projekte (Abschlussarbeiten, mehrere Monate)</li>
+						<li>Geschwister-Rabatt bei Workshops</li>
+					</ul>
+				</div>
+
+				<div class="faq-item">
+					<h3>Was ist im Preis enthalten?</h3>
+					<ul>
+						<li>Nutzung aller Maschinen & Werkzeuge</li>
+						<li>Basis-Materialien (Filament, Holz, Elektronik-Bauteile für Übungen)</li>
+						<li>Persönliche Betreuung & Einführung</li>
+					</ul>
+					<p><strong>Spezielle Bauteile</strong> (z.B. teure Sensoren, grosse Materialen) werden separat abgerechnet – immer transparent und im Voraus besprochen.</p>
+				</div>
+			</div>
+
+			<div class="footer-cta">
+				<h2>Noch Fragen?</h2>
+				<p>Schreib uns einfach, wir finden eine Lösung:</p>
+				<p><a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></p>
+				<p class="tagline">Wir glauben an <strong>faire Preise</strong> und <strong>niedrige Einstiegshürden</strong>.<br>Lass uns gemeinsam schauen, wie wir deine Ideen umsetzen können.</p>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.pricing-section {
+		padding: 4rem 0;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: var(--theme-on-bg);
+		text-align: center;
+	}
+
+	.intro {
+		font-size: 1.2rem;
+		color: var(--theme-on-bg);
+		opacity: 0.8;
+		margin-bottom: 4rem;
+		text-align: center;
+		line-height: 1.7;
+	}
+
+	.pricing-category {
+		margin-bottom: 4rem;
+	}
+
+	.pricing-category h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		color: var(--theme-primary);
+	}
+
+	.pricing-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.pricing-card {
+		background: var(--theme-surface-1);
+		border-radius: 16px;
+		padding: 2rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	.pricing-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.pricing-card.featured {
+		border: 2px solid var(--theme-primary);
+	}
+
+	.pricing-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+		color: var(--theme-on-bg);
+	}
+
+	.subtitle {
+		font-size: 1rem;
+		color: var(--theme-on-bg);
+		opacity: 0.7;
+		margin-bottom: 1.5rem;
+	}
+
+	.description {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.price-box {
+		background: linear-gradient(135deg, var(--theme-primary), var(--theme-primary-hover));
+		color: var(--theme-on-primary);
+		padding: 1.5rem;
+		border-radius: 12px;
+		margin-bottom: 1.5rem;
+		text-align: center;
+		font-size: 0.95rem;
+	}
+
+	.price-youth,
+	.price-adult {
+		display: inline-block;
+		font-size: 1.4rem;
+		font-weight: bold;
+		margin: 0 0.3rem;
+	}
+
+	.divider {
+		margin: 0 0.5rem;
+		opacity: 0.7;
+	}
+
+	.details {
+		list-style: none;
+		margin: 0 0 1.5rem 0;
+		padding: 0;
+	}
+
+	.details li {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		margin-bottom: 0.5rem;
+		line-height: 1.6;
+	}
+
+	.features {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.features li {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: var(--theme-on-bg);
+		opacity: 0.9;
+		margin-bottom: 0.75rem;
+	}
+
+	.special-offers {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin: 4rem 0;
+	}
+
+	.offer-card {
+		background: var(--theme-surface-2);
+		border-radius: 16px;
+		padding: 2rem;
+		border-left: 4px solid var(--theme-primary);
+	}
+
+	.offer-card h3 {
+		font-size: 1.4rem;
+		margin: 1rem 0;
+		color: var(--theme-on-bg);
+	}
+
+	.offer-card p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.offer-card ul {
+		margin-left: 1.5rem;
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+	}
+
+	.offer-card li {
+		margin-bottom: 0.5rem;
+	}
+
+	.contact {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--theme-on-surface-2);
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.contact a {
+		color: var(--theme-primary);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.contact a:hover {
+		text-decoration: underline;
+	}
+
+	.free-intro {
+		background: linear-gradient(135deg, var(--theme-primary), var(--theme-primary-hover));
+		color: var(--theme-on-primary);
+		padding: 3rem;
+		border-radius: 20px;
+		text-align: center;
+		margin: 4rem 0;
+	}
+
+	.free-intro h2 {
+		color: var(--theme-on-primary);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.free-intro h3 {
+		color: var(--theme-on-primary);
+		margin-bottom: 1.5rem;
+	}
+
+	.free-intro p {
+		color: var(--theme-on-primary);
+		opacity: 0.95;
+		margin-bottom: 1rem;
+	}
+
+	.free-intro ul {
+		list-style: none;
+		margin: 1.5rem 0;
+		padding: 0;
+	}
+
+	.free-intro li {
+		color: var(--theme-on-primary);
+		opacity: 0.95;
+		margin-bottom: 0.5rem;
+	}
+
+	.cta-button {
+		display: inline-block;
+		background: var(--theme-on-primary);
+		color: var(--theme-primary);
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: bold;
+		margin-top: 1.5rem;
+		transition: transform 0.2s, opacity 0.2s;
+	}
+
+	.cta-button:hover {
+		transform: scale(1.05);
+		opacity: 0.95;
+	}
+
+	.faq-section {
+		margin: 4rem 0;
+	}
+
+	.faq-section h2 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		color: var(--theme-on-bg);
+	}
+
+	.faq-item {
+		margin-bottom: 2rem;
+		padding: 1.5rem;
+		background: var(--theme-surface-1);
+		border-radius: 12px;
+	}
+
+	.faq-item h3 {
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+		color: var(--theme-on-bg);
+	}
+
+	.faq-item p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		line-height: 1.6;
+		margin-bottom: 0.5rem;
+	}
+
+	.faq-item ul {
+		margin-left: 1.5rem;
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+	}
+
+	.faq-item li {
+		margin-bottom: 0.5rem;
+	}
+
+	.footer-cta {
+		text-align: center;
+		padding: 3rem;
+		background: var(--theme-surface-1);
+		border-radius: 16px;
+		margin-top: 4rem;
+	}
+
+	.footer-cta h2 {
+		color: var(--theme-on-bg);
+		margin-bottom: 1rem;
+	}
+
+	.footer-cta p {
+		color: var(--theme-on-bg);
+		opacity: 0.85;
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.footer-cta a {
+		color: var(--theme-primary);
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.footer-cta a:hover {
+		text-decoration: underline;
+	}
+
+	.tagline {
+		margin-top: 1.5rem;
+		font-size: 1.1rem;
+	}
+
+	@media (max-width: 768px) {
+		.pricing-section {
+			padding: 2rem 0;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		.intro {
+			font-size: 1.1rem;
+		}
+
+		.pricing-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.special-offers {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-card {
+			padding: 1.5rem;
+		}
+
+		.free-intro {
+			padding: 2rem 1.5rem;
+		}
+	}
+</style>

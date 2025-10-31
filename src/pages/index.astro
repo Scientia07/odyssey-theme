@@ -1,91 +1,658 @@
 ---
-import { Container, FeatureCard } from '@components/odyssey-theme';
-
+import { Icon } from 'astro-icon/components';
+import { Container, Button, TextSection } from '@components/odyssey-theme';
 import Layout from '../layouts/Page.astro';
-import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+
+const seo = {
+	title: 'LunoLabs - Tech Workspace Altendorf | 3D-Druck, Robotik, CNC',
+	description: 'Tech Workspace in Altendorf (SZ) für innovative Projekte. 3D-Druck, Robotik, Elektronik, CNC. Professionelle Workshops und technische Begleitung.',
+};
 ---
 
-<Layout>
-	<HomeHeroSection />
+<Layout {seo}>
+	<!-- Hero Section -->
 	<Container>
-		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
-			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
-			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
-				</FeatureCard>
+		<section class="hero-section">
+			<div class="hero-text">
+				<h1>LunoLabs</h1>
+				<h2 class="hero-subtitle">Technologie erleben. Zukunft gestalten.</h2>
+				<p class="hero-description">
+					<strong>Tech Workspace in Altendorf (SZ)</strong><br>
+					Professionelle Infrastruktur für technische Projekte und Innovation.<br>
+					Von Prototyping bis Produktion – hands-on statt Theorie.
+				</p>
+				<p class="hero-tagline">
+					3D-Druck, Robotik, CNC-Fertigung – <strong>Technologie zum Anfassen.</strong>
+				</p>
+				<div class="hero-buttons">
+					<Button href="#angebote" customIcon>
+						Was wir bieten
+						<Fragment slot="icon">
+							<Icon name="ic:baseline-chevron-right"/>
+						</Fragment>
+					</Button>
+					<Button href="/company/contact" unelevated>Kontakt aufnehmen</Button>
+				</div>
+			</div>
+			<div class="hero-image">
+				<picture>
+					<img
+						src="/assets/images/home/dark-hero.jpg"
+						alt="LunoLabs Tech Workspace"
+						id="home-hero-image"
+					/>
+				</picture>
 			</div>
 		</section>
 	</Container>
 
+	<!-- Mission Statement -->
 	<Container>
-		<section class="feature-card__section">
-			<h2>Company Pages</h2>
-			<p>
-				Use one of our prebuilt company pages for your about page, contact page,
-				legal pages, blog posts, etc.
+		<section class="mission-section">
+			<h2>Kein Frontalunterricht. Kein "nur zuschauen".</h2>
+			<p class="lead-text">
+				Bei LunoLabs wird <strong>selbst gemacht</strong> – mit Herz, Spass und Gemeinschaft.
 			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
-				</FeatureCard>
-				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
-				</FeatureCard>
-				<FeatureCard
-					href="/blog/posts/remote-work-mental-health"
-					title="Blog Post"
-          imgSrc="/assets/images/home/screenshots/blog-post"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal"
-					title="Legal Page"
-				>
-				</FeatureCard>
+			<p>
+				Wir bauen Roboter, programmieren Mikrocontroller, entwickeln Modelle im 3D-Druck,
+				fräsen Bauteile und setzen Ideen in echte Projekte um.
+			</p>
+			<div class="tagline-grid">
+				<div class="tagline-item">
+					<h3>Bauen statt scrollen.</h3>
+				</div>
+				<div class="tagline-item">
+					<h3>Erleben statt zuschauen.</h3>
+				</div>
+				<div class="tagline-item">
+					<h3>Lernen durch Machen.</h3>
+				</div>
 			</div>
 		</section>
 	</Container>
 
+	<!-- Mission Details -->
 	<Container>
-		<section class="feature-card__section">
-			<h2>Theme Pages</h2>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
-			<div class="feature-card__grid">
-				<FeatureCard
-					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				>
-				</FeatureCard>
+		<section class="mission-details">
+			<h2>Unsere Mission</h2>
+			<p class="lead-text">
+				Viele Jugendliche sind neugierig, kreativ und voller Ideen – aber oft fehlt der
+				Zugang zu Werkzeugen, Maschinen und jemandem, der zeigt, wie man etwas baut.
+			</p>
+			<p class="highlight">Genau hier setzt LunoLabs an.</p>
+
+			<div class="mission-points">
+				<div class="point">
+					<Icon name="ic:baseline-check-circle" />
+					<div>
+						<h3>Technik greifbar machen</h3>
+						<p>Ein Ort, an dem Technologie nicht abstrakt bleibt, sondern angefasst werden kann.</p>
+					</div>
+				</div>
+				<div class="point">
+					<Icon name="ic:baseline-check-circle" />
+					<div>
+						<h3>Gemeinschaft erleben</h3>
+						<p>Eine Community, in der man sich gegenseitig hilft und gemeinsam wächst.</p>
+					</div>
+				</div>
+				<div class="point">
+					<Icon name="ic:baseline-check-circle" />
+					<div>
+						<h3>Projekte mit Sinn</h3>
+						<p>Projekte, die Spass machen und motivieren – keine langweiligen Übungen.</p>
+					</div>
+				</div>
+				<div class="point">
+					<Icon name="ic:baseline-check-circle" />
+					<div>
+						<h3>Begleitung ohne Druck</h3>
+						<p>Schritt-für-Schritt Unterstützung – in deinem Tempo, mit echtem Lernen.</p>
+					</div>
+				</div>
 			</div>
+
+			<p class="goal">
+				Unser Ziel: <strong>Selbstvertrauen und Zukunftsskills</strong> aufbauen.
+			</p>
+			<p>
+				Wir arbeiten mit Tools und Technologien, die heute in modernen Unternehmen, Startups
+				und Werkstätten eingesetzt werden – von 3D-CAD über Mikrocontroller-Programmierung bis CNC-Fertigung.
+			</p>
+		</section>
+	</Container>
+
+	<!-- Angebote Section -->
+	<Container>
+		<section class="angebote-section" id="angebote">
+			<h2>Angebote</h2>
+			<div class="angebote-grid">
+				<div class="angebot-card">
+					<div class="icon-container">
+						<Icon name="ic:baseline-school" />
+					</div>
+					<h3>Workshops & Kurse</h3>
+					<p>
+						Einsteiger- und Fortgeschrittenenprogramme in 3D-Druck, Elektronik, Robotik,
+						CAD und Programmierung. Strukturiert, hands-on, mit echten Projekten.
+					</p>
+				</div>
+				<div class="angebot-card">
+					<div class="icon-container">
+						<Icon name="ic:baseline-precision-manufacturing" />
+					</div>
+					<h3>Gemeinsame Projekte</h3>
+					<p>
+						Wir bauen Roboterarme, Drohnen, Smart-Home-Gadgets oder deine eigene Idee.
+						Alles ist möglich – von der Skizze bis zum fertigen Prototyp.
+					</p>
+				</div>
+				<div class="angebot-card">
+					<div class="icon-container">
+						<Icon name="ic:baseline-groups" />
+					</div>
+					<h3>Mentoring</h3>
+					<p>
+						1:1 oder Kleingruppen-Begleitung für Abschlussarbeiten, Schulprojekte oder
+						persönliche Ideen. Schritt für Schritt, auf Augenhöhe.
+					</p>
+				</div>
+				<div class="angebot-card">
+					<div class="icon-container">
+						<Icon name="ic:baseline-home-repair-service" />
+					</div>
+					<h3>Werkstatt & Maschinenzugang</h3>
+					<p>
+						Nutze unsere komplette Ausstattung – 3D-Drucker, Laser, CNC, Drehbank, Lötplatz
+						und mehr. Mit Einführung und Betreuung.
+					</p>
+				</div>
+			</div>
+		</section>
+	</Container>
+
+	<!-- Ausstattung Section -->
+	<Container>
+		<section class="ausstattung-section">
+			<h2>Ausstattung</h2>
+			<p class="lead-text">
+				Alles ist <strong>vor Ort in Altendorf</strong> – keine langen Wege, keine Hemmschwelle.
+			</p>
+			<div class="ausstattung-grid">
+				<div class="ausstattung-category">
+					<h3>Produktion & Fertigung</h3>
+					<ul>
+						<li>3D-Druck (FDM & Resin)</li>
+						<li>Laser-Cutter & Gravur</li>
+						<li>CNC-Fräse & Drehbank</li>
+						<li>Handwerkzeuge & Prototypenbau</li>
+					</ul>
+				</div>
+				<div class="ausstattung-category">
+					<h3>Elektronik & Programmierung</h3>
+					<ul>
+						<li>Mikrocontroller (Arduino, ESP32, Raspberry Pi)</li>
+						<li>Sensoren & Aktorik</li>
+						<li>Lötstation & Messgeräte</li>
+						<li>Programmierung (Python, C++, ROS)</li>
+					</ul>
+				</div>
+				<div class="ausstattung-category">
+					<h3>Robotik & Automation</h3>
+					<ul>
+						<li>Servomotoren & Schrittmotoren</li>
+						<li>Roboterarme</li>
+						<li>Sensorfusion & Bildverarbeitung</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</Container>
+
+	<!-- Equipment Gallery -->
+	<Container>
+		<section class="equipment-gallery">
+			<h2>Die Werkstatt</h2>
+			<p class="lead-text">Ein Einblick in unsere Ausstattung</p>
+			<div class="gallery-grid">
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1616628188540-925618b98318?w=600&h=400&fit=crop" alt="3D-Drucker im Einsatz" />
+					<p class="gallery-caption">3D-Druck</p>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop" alt="Robotik Komponenten" />
+					<p class="gallery-caption">Robotik</p>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1581092160607-ee67ef424252?w=600&h=400&fit=crop" alt="Elektronik Workbench" />
+					<p class="gallery-caption">Elektronik</p>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&h=400&fit=crop" alt="CNC Fertigung" />
+					<p class="gallery-caption">CNC & Fertigung</p>
+				</div>
+			</div>
+		</section>
+	</Container>
+
+	<!-- Zielgruppe Section -->
+	<Container>
+		<section class="zielgruppe-section">
+			<h2>Für wen ist LunoLabs gedacht?</h2>
+			<div class="zielgruppe-grid">
+				<div class="zielgruppe-item">
+					<h3>Jugendliche 12–18</h3>
+					<p>Die <em>bauen statt scrollen</em> wollen.</p>
+				</div>
+				<div class="zielgruppe-item">
+					<h3>Schüler:innen</h3>
+					<p>Die eine Abschlussarbeit planen oder ein Schulprojekt realisieren möchten.</p>
+				</div>
+				<div class="zielgruppe-item">
+					<h3>Eltern</h3>
+					<p>Die ihren Kindern Technikzugang mit Sinn und Begleitung geben möchten.</p>
+				</div>
+				<div class="zielgruppe-item">
+					<h3>Erwachsene</h3>
+					<p>Die Hobby-Maker sind oder es werden wollen – vom Quereinsteiger bis zum Tech-Enthusiasten.</p>
+				</div>
+			</div>
+			<div class="vorkenntnisse">
+				<p><strong>Vorkenntnisse?</strong> Brauchst du keine.</p>
+				<p><strong>Neugier?</strong> Reicht völlig.</p>
+			</div>
+		</section>
+	</Container>
+
+	<!-- Location Section -->
+	<Container>
+		<section class="location-section">
+			<h2>Warum Altendorf?</h2>
+			<p class="lead-text">
+				Zentral zwischen Zürich und Zug, direkt an der A3. Perfekt erreichbar und trotzdem mit Ruhe zum Arbeiten.
+			</p>
+			<p>
+				Ein Ort, an dem Fokus und Kreativität zusammenkommen – fernab vom Trubel, aber nah an allem Wichtigen.
+			</p>
+		</section>
+	</Container>
+
+	<!-- CTA Section -->
+	<Container>
+		<section class="cta-section">
+			<h2>Kontakt</h2>
+			<p class="lead-text">
+				Interessiert? Fragen? Projekt-Idee?<br>
+				Einfach melden – wir freuen uns auf neue Gesichter, neue Ideen und neue gemeinsame Projekte.
+			</p>
+			<div class="contact-info">
+				<p>📧 <strong><a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></strong></p>
+				<p>📍 <strong>Altendorf, Schwyz</strong></p>
+				<p>🌐 <strong><a href="https://lunolabs.ch">lunolabs.ch</a></strong></p>
+			</div>
+			<div class="social-links">
+				<p>📷 Instagram: @lunolabs_sz <em>(coming soon)</em></p>
+				<p>💼 LinkedIn: LunoLabs <em>(coming soon)</em></p>
+			</div>
+			<div class="cta-buttons">
+				<Button href="/company/contact" customIcon>
+					Kontakt aufnehmen
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-chevron-right"/>
+					</Fragment>
+				</Button>
+				<Button href="/buchen" unelevated>Kostenloses Kennenlernen buchen</Button>
+			</div>
+			<p class="launch-date">
+				<em>Wir starten im Frühling 2026. Sei von Anfang an dabei.</em>
+			</p>
 		</section>
 	</Container>
 </Layout>
 
 <style>
-	.feature-card__section {
+	/* Hero Section */
+	.hero-section {
+		margin: var(--section-margin) auto;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 2rem;
+	}
+	.hero-text {
+		justify-self: center;
+		max-width: 35rem;
+	}
+	.hero-text h1 {
+		font-size: 3.5rem;
+		margin-bottom: 0.5rem;
+	}
+	.hero-subtitle {
+		font-size: 1.5rem;
+		color: var(--theme-text-secondary);
+		margin-bottom: 1.5rem;
+		font-weight: 400;
+	}
+	.hero-description {
+		font-size: 1.1rem;
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+	.hero-tagline {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+	}
+	.hero-buttons {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.hero-image {
+		display: flex;
+	}
+	.hero-image img {
+		width: 100%;
+		height: 100%;
+		max-height: 80vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+	}
+
+	/* Mission Section */
+	.mission-section {
+		margin: var(--section-margin) auto;
+		text-align: center;
+		max-width: 50rem;
+	}
+	.mission-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.lead-text {
+		font-size: 1.3rem;
+		margin-bottom: 1.5rem;
+		color: var(--theme-text-secondary);
+	}
+	.tagline-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+	.tagline-item {
+		padding: 2rem 1rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.tagline-item h3 {
+		font-size: 1.3rem;
+		color: var(--theme-primary);
+	}
+
+	/* Mission Details */
+	.mission-details {
+		margin: var(--section-margin) auto;
+		max-width: 50rem;
+	}
+	.mission-details h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.highlight {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin: 2rem 0;
+		color: var(--theme-primary);
+	}
+	.mission-points {
+		display: grid;
+		gap: 1.5rem;
+		margin: 3rem 0;
+	}
+	.point {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 1rem;
+		align-items: start;
+	}
+	.point svg {
+		width: 2rem;
+		height: 2rem;
+		color: var(--theme-primary);
+		margin-top: 0.25rem;
+	}
+	.point h3 {
+		margin-bottom: 0.5rem;
+		font-size: 1.2rem;
+	}
+	.goal {
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin: 2rem 0 1rem;
+	}
+
+	/* Angebote Section */
+	.angebote-section {
 		margin: var(--section-margin) auto;
 	}
-	.feature-card__grid {
+	.angebote-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.angebote-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: var(--theme-grid-gap);
+		gap: 2rem;
 	}
+	.angebot-card {
+		padding: 2rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.angebot-card .icon-container {
+		margin-bottom: 1.5rem;
+	}
+	.angebot-card .icon-container svg {
+		width: 3rem;
+		height: 3rem;
+		color: var(--theme-primary);
+	}
+	.angebot-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	/* Ausstattung Section */
+	.ausstattung-section {
+		margin: var(--section-margin) auto;
+	}
+	.ausstattung-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	.ausstattung-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+	.ausstattung-category {
+		padding: 2rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.ausstattung-category h3 {
+		margin-bottom: 1rem;
+		color: var(--theme-primary);
+	}
+	.ausstattung-category ul {
+		list-style: none;
+		padding: 0;
+	}
+	.ausstattung-category li {
+		padding: 0.5rem 0;
+		border-bottom: 1px solid var(--theme-surface-2);
+	}
+	.ausstattung-category li:last-child {
+		border-bottom: none;
+	}
+
+	/* Zielgruppe Section */
+	.zielgruppe-section {
+		margin: var(--section-margin) auto;
+		text-align: center;
+	}
+	.zielgruppe-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+	}
+	.zielgruppe-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+	.zielgruppe-item {
+		padding: 2rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.zielgruppe-item h3 {
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+		color: var(--theme-primary);
+	}
+	.vorkenntnisse {
+		font-size: 1.2rem;
+		margin-top: 2rem;
+	}
+	.vorkenntnisse p {
+		margin: 0.5rem 0;
+	}
+
+	/* Location Section */
+	.location-section {
+		margin: var(--section-margin) auto;
+		text-align: center;
+		max-width: 50rem;
+	}
+	.location-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		margin: var(--section-margin) auto;
+		text-align: center;
+		max-width: 50rem;
+		padding: 3rem 2rem;
+		background: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.cta-section h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.contact-info {
+		margin: 2rem 0;
+		font-size: 1.1rem;
+	}
+	.contact-info p {
+		margin: 0.5rem 0;
+	}
+	.social-links {
+		margin: 2rem 0;
+	}
+	.social-links p {
+		margin: 0.5rem 0;
+	}
+	.cta-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin: 2rem 0;
+		flex-wrap: wrap;
+	}
+	.launch-date {
+		margin-top: 2rem;
+		font-size: 1.1rem;
+		color: var(--theme-text-secondary);
+	}
+
+	/* Responsive */
 	@media (max-width: 768px) {
-		.feature-card__grid {
+		.hero-section {
+			grid-template-columns: 1fr;
+		}
+		.hero-text h1 {
+			font-size: 2.5rem;
+		}
+		.tagline-grid {
+			grid-template-columns: 1fr;
+		}
+		.angebote-grid {
+			grid-template-columns: 1fr;
+		}
+		.ausstattung-grid {
+			grid-template-columns: 1fr;
+		}
+		.zielgruppe-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	/* Equipment Gallery */
+	.equipment-gallery {
+		margin: var(--section-margin) auto;
+		text-align: center;
+	}
+	.equipment-gallery h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+	.gallery-item {
+		overflow: hidden;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+	.gallery-item:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+	.gallery-item img {
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+		transition: transform 0.3s;
+	}
+	.gallery-item:hover img {
+		transform: scale(1.1);
+	}
+	.gallery-caption {
+		padding: 1rem;
+		font-weight: 600;
+		color: var(--theme-on-bg);
+		background: var(--theme-surface-1);
+	}
+	@media (max-width: 968px) {
+		.gallery-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (max-width: 600px) {
+		.gallery-grid {
 			grid-template-columns: 1fr;
 		}
 	}

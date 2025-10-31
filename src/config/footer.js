@@ -1,80 +1,71 @@
 export const footerSocials = [
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/jaydanurwin',
-    icon: "mdi:twitter",
+    name: 'Instagram',
+    url: 'https://instagram.com/lunolabs_sz',
+    icon: "mdi:instagram",
   },
   {
-    name: 'Youtube',
-    url: 'https://youtube.com/@jaydanurwin',
-    icon: "mdi:youtube",
+    name: 'LinkedIn',
+    url: 'https://linkedin.com/company/lunolabs',
+    icon: "mdi:linkedin",
   },
   {
-    name: 'Github',
-    url: 'https://github.com/jaydanurwin',
-    icon: "mdi:github",
-  },
-  {
-    name: 'Discord',
-    url: 'https://astro.build/chat',
-    icon: "ic:baseline-discord",
+    name: 'Email',
+    url: 'mailto:info@lunolabs.ch',
+    icon: "ic:baseline-email",
   },
 ]
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Angebote',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Preise & Angebote',
+				slug: '/preise',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Build Board',
+				slug: '/buildboard',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
+			{
+				title: 'Roadmap',
+				slug: '/roadmap',
+			},
+			{
+				title: 'FAQ',
+				slug: '/faq',
+			},
 		],
 	},
 	{
-		title: 'Company',
+		title: 'Über uns',
 		items: [
 			{
-				title: 'About',
+				title: 'Über LunoLabs',
 				slug: '/company/about',
 			},
 			{
-				title: 'Blog',
-				slug: '/blog',
+				title: 'Kontakt',
+				slug: '/company/contact',
 			},
 			{
-				title: 'Contact',
-				slug: '/company/contact',
+				title: 'Termin buchen',
+				slug: '/buchen',
 			},
 		],
 	},
 	{
-		title: 'Theme',
+		title: 'Rechtliches',
 		items: [
 			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
+				title: 'Impressum',
+				slug: '/impressum',
 			},
 			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
+				title: 'Datenschutz',
+				slug: '/datenschutz',
 			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
 		],
 	},
 ];

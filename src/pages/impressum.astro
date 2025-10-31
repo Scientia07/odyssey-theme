@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Page.astro';
+import Container from '../components/core/Container.astro';
+import { Icon } from 'astro-icon/components';
+
+const seo = {
+	title: 'Impressum | LunoLabs Altendorf',
+	description: 'Rechtliche Informationen und Kontaktdaten von LunoLabs, Tech Workspace in Altendorf, Schwyz.',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<section class="legal-section">
+			<h1><Icon name="ic:baseline-gavel" /> Impressum</h1>
+
+			<div class="legal-content">
+				<h2>Angaben gemäss Schweizer Recht</h2>
+
+				<div class="info-box">
+					<p><strong>LunoLabs</strong><br>
+					Joel Nyffeler</p>
+
+					<p>[Vollständige Adresse einfügen]<br>
+					Altendorf, SZ [PLZ einfügen]<br>
+					Schweiz</p>
+
+					<p><Icon name="ic:baseline-email" /> <strong>E-Mail:</strong> <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a><br>
+					<Icon name="ic:baseline-language" /> <strong>Website:</strong> <a href="https://www.lunolabs.ch">www.lunolabs.ch</a></p>
+				</div>
+
+				<h2>Rechtsform</h2>
+				<p>[Einzelunternehmen / GmbH / Verein - bitte ergänzen]</p>
+
+				<div class="info-box">
+					<p><strong>UID-Nummer:</strong> [Falls vorhanden, bitte einfügen]<br>
+					<strong>Handelsregister:</strong> [Falls eingetragen, bitte einfügen]</p>
+				</div>
+
+				<h2>Vertretungsberechtigte Person</h2>
+				<p><strong>Joel Nyffeler</strong><br>
+				Inhaber und Betriebsleiter</p>
+
+				<h2>Haftungsausschluss</h2>
+
+				<h3>Haftung für Inhalte</h3>
+				<p>Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+				<h3>Haftung für Links</h3>
+				<p>Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+				<h3>Urheberrecht</h3>
+				<p>Die durch den Betreiber dieser Website erstellten Inhalte und Werke unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des Erstellers.</p>
+
+				<h2>Datenschutz</h2>
+				<p>Informationen zur Erhebung und Verarbeitung personenbezogener Daten finden Sie in unserer <a href="/datenschutz">Datenschutzerklärung</a>.</p>
+
+				<h2>Streitbeilegung</h2>
+				<p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter folgendem Link finden:<br>
+				<a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a></p>
+
+				<p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+				<div class="footer-note">
+					<p><strong>Letztes Update:</strong> Dezember 2025</p>
+					<p>Bei Fragen zum Impressum kontaktieren Sie uns gerne unter: <a href="mailto:info@lunolabs.ch">info@lunolabs.ch</a></p>
+				</div>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.legal-section {
+		padding: 4rem 0;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: var(--theme-on-bg);
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.legal-content {
+		color: var(--theme-on-bg);
+	}
+
+	h2 {
+		font-size: 1.8rem;
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+		color: var(--theme-primary);
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		color: var(--theme-on-bg);
+	}
+
+	p {
+		line-height: 1.7;
+		margin-bottom: 1rem;
+		opacity: 0.85;
+	}
+
+	.info-box {
+		background: var(--theme-surface-1);
+		padding: 1.5rem;
+		border-radius: 12px;
+		margin: 1.5rem 0;
+	}
+
+	.info-box p {
+		margin-bottom: 1rem;
+	}
+
+	.info-box p:last-child {
+		margin-bottom: 0;
+	}
+
+	.info-box a {
+		color: var(--theme-primary);
+		text-decoration: none;
+	}
+
+	.info-box a:hover {
+		text-decoration: underline;
+	}
+
+	a {
+		color: var(--theme-primary);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.footer-note {
+		margin-top: 4rem;
+		padding-top: 2rem;
+		border-top: 1px solid var(--theme-on-surface-1);
+	}
+
+	.footer-note p {
+		font-size: 0.95rem;
+		opacity: 0.75;
+	}
+
+	@media (max-width: 768px) {
+		.legal-section {
+			padding: 2rem 0;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}
+
+		.info-box {
+			padding: 1.25rem;
+		}
+	}
+</style>

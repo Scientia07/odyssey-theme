@@ -1,0 +1,90 @@
+backend:
+  name: test-repo
+
+# Optional: For local development
+# local_backend: true
+
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  # Homepage
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "src/content/homepage.json"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Untertitel", name: "subtitle", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "text" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Hero Bild", name: "heroImage", widget: "image" }
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "SEO Titel", name: "title", widget: "string" }
+              - { label: "SEO Beschreibung", name: "description", widget: "text" }
+
+  # About Page
+  - name: "about"
+    label: "Über uns"
+    files:
+      - label: "Über uns Content"
+        name: "about"
+        file: "src/content/about.json"
+        fields:
+          - { label: "Überschrift", name: "title", widget: "string" }
+          - { label: "Intro Text", name: "intro", widget: "text" }
+          - { label: "Vision", name: "vision", widget: "text" }
+          - label: "Gründer"
+            name: "founder"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Bio", name: "bio", widget: "text" }
+              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Zitat", name: "quote", widget: "text" }
+
+  # Contact Page
+  - name: "contact"
+    label: "Kontakt"
+    files:
+      - label: "Kontakt Info"
+        name: "contact"
+        file: "src/content/contact.json"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Standort", name: "location", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+
+  # Settings
+  - name: "settings"
+    label: "Einstellungen"
+    files:
+      - label: "Allgemeine Einstellungen"
+        name: "general"
+        file: "src/content/settings.json"
+        fields:
+          - { label: "Site Name", name: "siteName", widget: "string" }
+          - { label: "Site Description", name: "siteDescription", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Favicon", name: "favicon", widget: "image" }
+          - { label: "Launch Datum", name: "launchDate", widget: "string" }
+          - { label: "Calendly Link", name: "calendlyLink", widget: "string" }
+
+  # Pages (for easy editing of existing pages)
+  - name: "pages"
+    label: "Seiten"
+    folder: "src/content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Beschreibung", name: "description", widget: "text" }
+      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Veröffentlicht", name: "published", widget: "boolean", default: true }

@@ -1,0 +1,12 @@
+{
+  "title": "Über LunoLabs",
+  "intro": "LunoLabs ist ein Tech Workspace in Altendorf (SZ), der Menschen und Unternehmen zeigt, wie Technologie greifbar wird, wenn man sie hands-on erlebt.",
+  "vision": "Wir glauben, dass Lernen am besten durch Machen geschieht. Nicht durch langes Erklären. Nicht durch stundenlanges Zuschauen. Sondern indem man selbst baut.",
+  "founder": {
+    "name": "Joel Nyffeler",
+    "title": "Mentor, Maker, Techniker, Wissens-Teiler",
+    "bio": "Ich arbeite seit Jahren in der IT, Elektronik und mit 3D-Technologien. Was mich antreibt, ist nicht die Technik an sich – sondern Menschen dabei zu begleiten, damit etwas zu erschaffen.",
+    "photo": "/assets/images/home/classic-hero.jpg",
+    "quote": "Wir teilen Wissen. Wir teilen Ideen. Wir gestalten Technologie gemeinsam."
+  }
+}
